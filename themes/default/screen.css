@@ -1,0 +1,14 @@
+/* Sidebar menu */
+.trustr-list {
+    background-image: url("graphics/user.png");
+}
+
+/* Button bar */
+.trustr-delete {
+    background-image: url("graphics/delete.png");
+}
+
+/* List table */
+.horde-table {
+    width: 100%;
+}
