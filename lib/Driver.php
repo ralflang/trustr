@@ -11,6 +11,8 @@
  * @package  Trustr
  */
 
+use Horde\Injector\Attribute\Factory;
+
 /**
  * Trustr_Driver defines an API for implementing storage backends for
  * Trustr.
@@ -21,6 +23,7 @@
  * @license   http://www.horde.org/licenses/gpl GPL
  * @package   Trustr
  */
+#[Factory(factory: Trustr_Factory_Driver::class, method: 'create')]
 class Trustr_Driver
 {
     /**
