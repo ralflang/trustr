@@ -1,4 +1,5 @@
 <?php
+use Horde\Injector\Injector;
 /**
  * Copyright 2010-2017 Horde LLC (http://www.horde.org/)
  *
@@ -32,7 +33,7 @@ class Trustr_Factory_Driver extends Horde_Core_Factory_Injector
      *
      * @return Trustr_Driver
      */
-    public function create(Horde_Injector $injector)
+    public function create(Horde_Injector|Injector $injector)
     {
         $driver = Horde_String::ucfirst($GLOBALS['conf']['storage']['driver']);
         $signature = serialize(array($driver, $GLOBALS['conf']['storage']['params']['driverconfig']));
